@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Movies Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .movies-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .movie-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .movie-info h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .movie-info p {
+      margin: 0;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>🎬 My Movies Collection</header>
+  
+  <div class="movies-container">
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/81GqtNbs+PL._AC_SY679_.jpg" alt="Inception">
+      <div class="movie-info">
+        <h3>Inception</h3>
+        <p>2010</p>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Interstellar">
+      <div class="movie-info">
+        <h3>Interstellar</h3>
+        <p>2014</p>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="The Dark Knight">
+      <div class="movie-info">
+        <h3>The Dark Knight</h3>
+        <p>2008</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
